@@ -1,0 +1,17 @@
+﻿<Window x:Class="DatabaseConnectivity.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DatabaseConnectivity"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox FontSize="30" x:Name="textBox" Margin="51,31,364,0" TextWrapping="Wrap" Text="" Height="73" VerticalAlignment="Top"/>
+        <Button x:Name="button" FontSize="30" Content="Insert" HorizontalAlignment="Right" Height="73" Margin="0,31,183,0" VerticalAlignment="Top" Width="133" Click="Insert_Data"/>
+        <Button Content="Clear" FontSize="30" HorizontalAlignment="Right" Height="73" Margin="0,31,27,0" VerticalAlignment="Top" Width="133" Click="Clear_Data"/>
+        <DataGrid x:Name="dataGrid" Margin="28,0,62,28" Height="175" VerticalAlignment="Bottom"/>
+        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" x:Name="label" Height="63" Margin="323,136,50,220"/>
+        <Label VerticalContentAlignment="Center" x:Name="label_Copy" Content="Last Inserted Data :" Height="63" Margin="28,136,0,0" VerticalAlignment="Top" FontSize="30" HorizontalAlignment="Left" Width="290"/>
+    </Grid>
+</Window>
